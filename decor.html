@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--link for fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Decoration</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <!--link and script to conectimg with css and js file-->
+    <script src="final.js"></script>
+    <link rel="stylesheet" href="col.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<!--fixed header-->
+    <header class="position-fixed header">
+        <div class="row">
+        <div class="open" onclick="openNav()">&#9776;</div>
+        
+        <h1>Smeraldo</h1>
+        </div>
+    </header>
+<!--nav which hidden until u don't click burger in header-->
+    <nav id="Navka">
+        <a href="#" class="close" onclick="closeNav()">&times;</a>
+        <div>
+        <a href="index.html">Smeraldo</a>
+        <a href="tropic.html">Tropical Plants</a>
+        <a href="pampas.html">Dried flowers</a>
+        <a href="#">Decoration</a>
+        <a href="#contact" onclick="closeNav()">Contact Us</a>
+        </div>
+    </nav>
+
+    <main>
+      <!--intro container-->
+       <div class="intro decor">
+           <div class="sugar">
+               <h1>Decoration</h1>
+               <p>Glow up</p>
+           </div>
+       </div>
+
+       <!--bonus info about option-->
+       <div class="info row container-fluid justify-content-center">
+        <img src="https://i.pinimg.com/564x/0f/41/16/0f411635e7349759c16c749bde607edf.jpg" alt="">
+        <div class="text">
+             <h3>Pampas grass</h3>
+        <p>
+            No matter the season, we love flowers. But now that we've sprung forward an 
+            hour and the temperatures have climbed above forty degrees, we're feeling the 
+            floral love even more. After all, spring is all about fresh starts. Read: 'Tis the 
+            season for cleaning, blooms, and allergy medicine. So learn how to make beautiful 
+            floral centerpieces to impress guests and beautify your home without having to make 
+            any major design changes. Wherever you place your flowers, these designer ideas and 
+            tricks will have 'em looking better and lasting longer than ever.
+        </p>
+        </div>
+    </div>
+
+
+       <h1 class="text-center">Catalogue</h1>
+<!--container of product cards-->
+      <div class="GalyaGrechkaYest">
+         <!--product cards--> 
+          <div class="mycard">
+              <div class="imgcont">
+                  <img src="https://i.pinimg.com/236x/8f/c0/d3/8fc0d33ec07c1935e13d106e928699f4.jpg" alt="">
+              </div>
+              <div class="content d">
+                  <h3>Hanging Baskets</h3>
+                  <p>
+                    Many flowers suitable for hanging 
+                    baskets are pendulous, that can be a 
+                    challenge in a garden but perfect for 
+                    decorative.
+                  </p>
+                  <div class="row container justify-content-around">
+                    <h5> 11,99$ </h5>
+                    <a type="button" class="like" onclick="like()">
+                      &hearts; 
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="mycard">
+            <div class="imgcont">
+                <img src="https://i.pinimg.com/236x/e7/57/79/e7577916b1eb589a589cad82735d4969.jpg" alt="">
+            </div>
+            <div class="content d">
+                <h3>Flower set</h3>
+                <p>
+                    It will decorate any 
+                    room, while easily fitting into the interior.
+                </p>
+                <div class="row container justify-content-around">
+                    <h5> 8,99$ </h5>
+                    <a type="button" class="like" onclick="like()">
+                      &hearts; 
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="imgcont">
+                <img src="https://data.whicdn.com/images/337309698/superthumb.jpg?t=1573586920" alt="">
+            </div>
+            <div class="content d">
+                <h3>Basket of flowers</h3>
+                <p>
+                    А creative way to give freshness 
+                    and atmosphere to the coming spring.
+                </p>
+                <div class="row container justify-content-around">
+                    <h5> 9,99$ </h5>
+                    <a type="button" class="like" onclick="like()">
+                      &hearts; 
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="imgcont">
+                <img src="https://data.whicdn.com/images/311056947/superthumb.jpg?t=1524260604" alt="">
+            </div>
+            <div class="content d">
+                <h3>Flowering branches</h3>
+                <p>
+                    An ideal choice for lovers of Oriental aesthetics.
+                </p>
+                <div class="row container justify-content-around">
+                    <h5> 6,99$ </h5>
+                    <a type="button" class="like" onclick="like()">
+                      &hearts; 
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="imgcont">
+                <img src="https://data.whicdn.com/images/310396912/superthumb.jpg?t=1523217614" alt="">
+            </div>
+            <div class="content d">
+                <h3>Morning flower</h3>
+                <p>
+                    These ruffly flowers may be the stuff of high school 
+                    secret admirers, but they work for a lover on a budget.
+                </p>
+                <div class="row container justify-content-around">
+                    <h5> 15,99$ </h5>
+                    <a type="button" class="like" onclick="like()">
+                      &hearts; 
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="mycard">
+          <div class="imgcont">
+              <img src="https://data.whicdn.com/images/335385628/superthumb.jpg?t=1568813646" alt="">
+          </div>
+          <div class="content d">
+              <h3>"Sound of Music"</h3>
+              <p>
+                That bouqet containt Edelweiss, so
+                it will stand for courage 
+                and devotion.
+                Perfect choice for The Sound of Music fans.
+                
+              </p>
+              <div class="row container justify-content-around">
+                <h5> 5,99$ </h5>
+                <a type="button" class="like" onclick="like()">
+                  &hearts; 
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="mycard">
+          <div class="imgcont">
+              <img src="https://data.whicdn.com/images/322504668/superthumb.jpg?t=1542512080" alt="">
+          </div>
+          <div class="content d">
+              <h3>Flowers on the wall</h3>
+              <p>
+                Perfect replacement for wall clocks with pictures.
+              </p>
+              <div class="row container justify-content-around">
+                <h5> 12,99$ </h5>
+                <a type="button" class="like" onclick="like()">
+                  &hearts; 
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="mycard">
+          <div class="imgcont">
+              <img src="https://data.whicdn.com/images/313780622/superthumb.jpg?t=1528643845" alt="">
+          </div>
+          <div class="content d">
+              <h3>Love and Care</h3>
+              <p>
+                These early risers greet the day with beauty, 
+                and they'll take over your love
+              </p>
+              <div class="row container justify-content-around">
+                <h5> 21,99$ </h5>
+                <a type="button" class="like" onclick="like()">
+                  &hearts; 
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="mycard">
+        <div class="imgcont">
+            <img src="https://data.whicdn.com/images/325504745/superthumb.jpg?t=1547876669" alt="">
+        </div>
+        <div class="content d">
+            <h3>Sunflower</h3>
+            <p>
+                Legend has it that sunflowers were made of real gold. 
+                The golden flower will be ideal choice for summer girls.
+            </p>
+            <div class="row container justify-content-around">
+                <h5> 15,99$ </h5>
+                <a type="button" class="like" onclick="like()">
+                  &hearts; 
+              </a>
+            </div>
+        </div>
+    </div>
+    <div class="mycard">
+      <div class="imgcont">
+          <img src="https://i.pinimg.com/236x/46/74/5e/46745e3d5768acf34dd3248f331f25d7.jpg" alt="">
+      </div>
+      <div class="content d">
+          <h3>Flowers in light bu</h3>
+          <p>
+            If you have unnecessary light bulbs and you 
+            want to be creative, then you might like this idea.
+          </p>
+          <div class="row container justify-content-around">
+            <h5> 5,99$ </h5>
+            <a type="button" class="like" onclick="like()">
+              &hearts; 
+          </a>
+        </div>
+      </div>
+  </div>
+  <div class="mycard">
+      <div class="imgcont">
+          <img src="https://data.whicdn.com/images/313975410/superthumb.jpg?t=1528938038" alt="">
+      </div>
+      <div class="content d">
+          <h3>Yarrow box</h3>
+          <p>Another quirky bloom with a traditional 
+              message that might surprise you.
+              Yarrow box great choice to show love.</p>
+          <div class="row container justify-content-around">
+            <h5> 8,99$ </h5>
+            <a type="button" class="like" onclick="like()">
+              &hearts; 
+          </a>
+        </div>
+      </div>
+  </div>
+  <div class="mycard">
+      <div class="imgcont">
+          <img src="https://data.whicdn.com/images/299644083/superthumb.jpg?t=1508437294" alt="">
+      </div>
+      <div class="content d">
+          <h3>Blossom frend</h3>
+          <p>
+            A faraway friend would surely 
+            appreciate these delicate blossoms.
+          </p>
+          
+          <div class="row container justify-content-around">
+            <h5> 5,99$ </h5>
+            <a type="button" class="like" onclick="like()">
+              &hearts; 
+          </a>
+        </div>
+      </div>
+  </div>
+        
+      </div>
+    </main>
+
+       <!--footer-->
+    <footer id="contact">
+      <h1>Smeraldo 
+        <!--email symbol to open dialog form-->
+          <span type="button" id="email">&#9993;</span>
+      </h1>
+      <!--containers with contact/ geo-data(google map)/ social media-->
+      <div class="content row ">
+          <div class="col">
+              <div>
+                  <p>Contact</p>
+              </div>
+              <div>
+                  <ul>
+                  <li> 
+                    <a href="">
+                      87172645717
+                    </a> 
+                  </li>
+                  <li> 
+                    <a href="">
+                      smrld@bk.en
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="https://wa.me/87172645717">
+                      whatsapp
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="https://t.me/astanaituniversity">
+                      telegram
+                    </a>  
+                  </li>
+              </ul>
+              </div>
+              
+          </div>
+          <div class="col">
+              <div>
+                  <p>Social</p>
+              </div>
+              
+              <div>
+                  <ul>
+                  <li>
+                    <a href="https://www.instagram.com/astana_it_university/">
+                      insta
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/Astana-It-University-372074696727662/?ref=py_c">
+                      facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/TokayevKZ?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                      twitter
+                    </a>
+                  </li>
+              </ul>
+              </div>
+              
+          </div>
+          <div class="col">
+              <div>
+                   <p>Placement</p>
+              </div>
+              <div>
+                   <ul>
+                  <li >
+                      <a href="https://www.google.ru/maps/place/Astana+IT+University/@51.0908525,71.4161342,17z/data=!4m6!3m5!1s0x424585a605525605:0x4dff4a1973f7567e!4b1!8m2!3d51.0908492!4d71.4183229">
+                          <img src="https://data.whicdn.com/images/341257118/original.jpg" alt="" >
+                      </a>
+                  </li>
+              </ul>
+              </div>
+             
+             
+          </div>
+      </div>
+  </footer>
+
+  <!--dialog form which help to leave user contact to stay in touch with flower shop-->
+<div  id="dform" class="dmodal">
+  <div class="dialog">
+
+      <div class="con">
+
+      <h3>Leave your contact</h3>
+      <p>to stay in touch</p>
+      <form >
+
+      <label >
+          <input type="text" placeholder="Full name">
+      </label>
+      <label >
+          <input type="number" placeholder="Number">
+      </label>
+       
+      </form>
+      <button class="closeme">Send</button>
+      </div>
+
+  </div>
+</div>
+
+<!--js dialog form -->
+<script>
+
+var modal = document.getElementById("dform");
+var btn = document.getElementById("email");
+var span = document.getElementsByClassName("closeme")[0];
+
+btn.onclick = function() {
+modal.style.display = "block";
+}
+//to show
+
+span.onclick = function() {
+modal.style.display = "none";
+}
+//to close by clicking send button
+
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+//to close clicking to dark window area
+</script>
+    
+<!--js to chanhe bg-color and color by replacement from the top of the site-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      
+$(function(){
+    $(window).on("scroll",function(){
+        if($(window).scrollTop()>50){
+            $(".header").addClass("change");
+        }
+        else{
+            $(".header").removeClass("change");
+        }
+    })
+});
+    </script>
+      
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

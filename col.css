@@ -1,0 +1,479 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+   
+}
+/*there is css for fixes header */
+header{
+	background: transparent;
+    z-index: 1;
+    width: 100%;
+    padding:  1.5% 2%;
+	top: 0;
+	-webkit-transition: all ease-out 0.5s;
+	-moz-transition: all ease-out 0.5s;
+	-o-transition:all ease-out 0.5s;
+	transition:all ease-out 0.5s;
+}
+.header{
+	background-color: white;
+}
+.change{
+	background-color:black;
+	color: blanchedalmond;
+}
+header h1{
+  margin: auto;
+  font-family: 'Dosis', sans-serif;
+}
+header .open{
+    left: 0;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+/*navbar css*/
+nav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    overflow: hidden;
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5%;
+    color: blanchedalmond;
+    display: block;
+    transition: 1s;
+    font-family: 'Dosis', sans-serif;
+}
+nav a:hover{
+    background-color: #DBCFBC;
+    color: black;
+    text-decoration: none;
+}
+nav .close{
+    font-size: 38px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+nav div{
+    margin: 25% 0px;
+}
+/*main ccontent css*/
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*intro content which come up to be understand in which option user is*/
+.intro{
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 9% 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*there is bg-img for intro to every option*/
+.tropica{
+   background-image: url(https://image.freepik.com/free-photo/_53876-88891.jpg);
+}
+.pampas{
+    background-image: url(https://i.pinimg.com/564x/b4/17/00/b417008c985b1a4920f0ca0096c0bc06.jpg);
+}
+.decor{
+    background-image: url(https://www.elsetge.cat/myimg/f/37-371949_laptop-wallpapers-tumblr-90671-mountain-laurel.jpg);
+}
+/*there is card for inro*/
+.sugar{
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(250, 250, 250);
+    opacity: 0.8;
+    margin: 0px auto;
+    width: 50%;
+    padding: 3%;
+    text-align: center;
+}
+/*bonus info for every option with text and img*/
+.info{
+    width: 80%;
+    margin: 9% auto;
+    
+}
+.info img{
+    width: 35%;
+}
+.info .text{
+    width: 45%;
+    text-align: justify;
+    padding: 10% 1.6%;
+}
+/*sry for class joke name?which come up with covid-19*/
+/*there is container where considering card with info and img*/
+.GalyaGrechkaYest{
+    padding: 2%;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+}
+.GalyaGrechkaYest .mycard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+
+}
+.GalyaGrechkaYest .mycard:nth-child(even){
+    flex-direction: column-reverse;
+}
+.GalyaGrechkaYest .mycard .imgcont{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+}
+.GalyaGrechkaYest .mycard .imgcont img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.GalyaGrechkaYest .mycard .content{
+    padding: 3%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+}
+.GalyaGrechkaYest .mycard .content p{
+    text-align: justify;
+}
+
+.GalyaGrechkaYest .mycard .content a{
+    color: blanchedalmond;
+    font-size: 21px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s ease;
+    outline: none;
+   
+  }
+.GalyaGrechkaYest .mycard .content  a:hover {
+    color: blanchedalmond;
+}
+/*bg-color for card where considering text by their option*/
+.p{
+     background-color: #B2A185;
+}
+.t{
+    background-color: #88A087;
+}
+.d{
+    background-color: #D2B5BD ;
+}
+.GalyaGrechkaYest .mycard .content div{
+    padding: 20px;
+    text-align: justify;
+
+}
+/*working  with footer*/
+footer{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 1%;
+}
+footer h1{
+    padding: 3% 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: blanchedalmond;
+}
+footer img{
+    width: 100%;
+}
+footer .row{
+    width: 80%;
+    justify-content: center;
+    padding: 0px 10% ;
+    margin: 0px auto;
+}
+footer .row .col{
+    justify-content: center;
+    width: 25%;
+    padding: 2%;
+}
+footer .row .col p{
+    font-family: 'Staatliches', cursive;
+    font-weight: 100;
+    font-size: 30px;
+    color: blanchedalmond;
+}
+footer .row .col a{
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    color: rgba(240, 233, 223, 0.74);
+
+}
+footer .row .col a:hover{
+    font-size: 23px;
+}
+/*to make website darker when dialog form will come up*/
+.dmodal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: black;
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+/*dialog form which come up by clicking email symbol in website footer*/
+ .dialog{
+    margin: auto;
+    position: relative;
+    animation-name:dform ;
+    -webkit-animation-name: dform;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    z-index: 5;
+    background-image:url(https://data.whicdn.com/images/318537820/original.jpg) ;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 40%;
+    padding: 2%;
+    border-radius: 3%;
+    
+}
+/*animation for dialog form<which will come up from top*/
+@-webkit-keyframes dform{
+    from{opacity: 0;top: -300px;}
+    to{opacity: 1;top: 0;}
+}
+@keyframes dform{
+    from{opacity: 0;top: -300px;}
+    to{opacity: 1; top: 0;}
+}
+.dialog .con{
+    opacity: 0.9;
+    background-color: blanchedalmond;
+    color: black;
+    width: 90%;
+    margin: auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.dialog form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25%;
+}
+.dialog form input{
+    padding: 1%;
+    width: 90%;
+}
+/*css for send button*/
+.dialog button{
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 6px;
+    padding: 1%;
+    margin: 0 auto;
+    width: 35%;
+    border: 0px;
+    transition: ease-out 0.5s;
+    text-decoration: none;
+    outline: none;
+}
+.dialog button:hover{
+    background-color: burlywood;
+    color: black;
+    text-decoration: none;
+    border: none;
+}
+
+.dialog button,
+.dialog button:active,
+.dialog button:focus{
+	outline: none;
+}
+/*tablet*/
+@media(max-width:800px)
+{
+    .dialog{
+		width: 66%;
+	}
+    body{
+        padding-top: 90px;
+    }
+    header .open{
+		font-size: 30px;
+		margin-left: 2%;
+    }
+    
+    .info{
+        width: 80%;
+        margin: 9% 10%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .info img{
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+    }
+    .info .text{
+        width: 80%;
+        margin: 0 10%;
+        text-align: justify;
+        padding: 10% 1.6%;
+    }
+
+    .GalyaGrechkaYest{
+        grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+        margin: auto;
+    }
+    .GalyaGrechkaYest .mycard{
+        flex-direction: row;
+
+    }
+    .GalyaGrechkaYest .mycard:nth-child(even){
+        flex-direction: row-reverse;
+        
+    }
+    .GalyaGrechkaYest .mycard .imgcont,
+    .GalyaGrechkaYest .mycard .content{
+        width: 50%;
+    }
+    
+    .GalyaGrechkaYest .mycard .content h3{
+        font-size: 23px;
+    }
+    .GalyaGrechkaYest .mycard .content p{
+        font-size: 16px;
+    }
+
+    
+footer .row .col{
+    width: 30%;
+    margin: 2%;
+}
+
+}
+/*phone*/
+@media(max-width:415px)
+{
+    
+	.dialog{
+		width: 90%;
+	}
+    body{
+        padding-top: 50px;
+    }
+
+    header .open{
+        margin: auto 0px;
+		font-size: 20px;
+		margin-left: 5%;
+    }
+    
+    header h1{
+        font-size: 24px;
+       } 	
+    
+	.intro h1{
+		font-size: 23px;
+	}
+	p{
+		font-size: 12px;
+	}
+	nav a{
+		font-size: 20px;
+    }
+    
+    .GalyaGrechkaYest .mycard{
+        flex-direction: column;
+    }
+    .GalyaGrechkaYest .mycard:nth-child(even){
+        flex-direction: column;
+    }
+    .GalyaGrechkaYest .mycard .imgcont,
+    .GalyaGrechkaYest .mycard .content{
+        width: 100%;
+    }
+    
+    .GalyaGrechkaYest .mycard .content h3{
+        font-size: 21px;
+    }
+    .GalyaGrechkaYest .mycard .content p{
+        font-size: 18px;
+      
+    }
+
+    footer .row{
+        display: flex;
+        flex-direction: column;
+    }
+    footer h1{
+        font-size: 30px;
+    }
+    footer .row .col{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    footer .row .col div{
+        width: 45%;
+        padding: 2%;
+    }
+    footer .row .col p{
+        float: right;
+        font-size: 23px;
+    }
+    footer .row .col a{
+        float: left;
+        font-size: 18px;
+        
+    }
+    footer .row .col a:hover{
+        font-size: 20px;
+    }
+
+}
