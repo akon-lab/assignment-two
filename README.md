@@ -1,6 +1,6 @@
 # smeraldo
 
-1)there is header for every web-pages in smeraldo
+1)there is header for every web-pages in smeraldo 
 
 <header class="position-fixed header" >
       <div class="row">
