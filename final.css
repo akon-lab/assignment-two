@@ -522,6 +522,9 @@ footer .row .col{
         display: flex;
         flex-direction: column;
     }
+	footer{
+		height:600px;
+	}
     footer h1{
         font-size: 30px;
     }
