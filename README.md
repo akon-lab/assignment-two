@@ -1,8 +1,8 @@
-# smeraldo
+# Smeraldo
 
 1)There is header for every web-pages in smeraldo 
 ---
-with 'burger'button to navbar and Shop name in center of header
+with 'burger' button to navbar and Shop name in center of header, for all pages.
 ***
 HTML code:
 ```html
@@ -17,8 +17,8 @@ HTML code:
 ```
 2)Navbar html code;
 ---
-Which consider Links to general page and 3 sub-pages;
----
+Which consider Links to general page and 3 sub-pages, for all pages.
+***
 HTML code
 ```html
 <nav id="Navka">
@@ -34,9 +34,9 @@ HTML code
 ```
 3)There is introduction part to web page
 ---
--General page: which show as big card("intro") with img background and little card("cardforintro") inside
+-General page: which show as big card("intro") with img background and little card("cardforintro") inside.
 ***
-HTML code
+HTML code (General page):
 ```html
   <div class="intro">
           <div class="cardforintro">
@@ -47,12 +47,9 @@ HTML code
 ```
 4)Contaiiner with some information about why thad made web-page is made for
 ---
--General Page:
-1.title:"About Us"
-2.image 
-3.text
+It contain title, image and some text;
 ***
-HTML code:
+HTML code (General page):
 ```html
   <div class="aboutus container">
 
@@ -437,7 +434,7 @@ HTML code
 ---
 Contain data about shop (contact.social and placement)
 ***
-There are 3 column which made as list, I use "<ul>" tag and inside "<li>" replace link, for more comfortable.
+There are 3 column which made as list, I use ul tag and inside li tags replace link, for more comfortable.
 ***
 (P.S. image also is a link to google map)
 ***
@@ -523,4 +520,36 @@ There are 3 column which made as list, I use "<ul>" tag and inside "<li>" replac
             </div>
         </div>
     </footer>
+```
+8)Dialog form.
+---
+Made for saving user contact if he/she has reason to chose option.
+***
+It is such kind of Bonus contact between shop and user, I think the full form with contact which user can send, needing in backend.
+***
+HTML code:
+```html
+  <!--dialog form which help to leave user contact to stay in touch with flower shop-->
+  <div  id="dform" class="dmodal">
+    <div class="dialog">
+
+        <div class="con">
+
+        <h3>Leave your contact</h3>
+        <p>to stay in touch</p>
+        <form >
+
+        <label >
+            <input type="text" placeholder="Full name">
+        </label>
+        <label >
+            <input type="number" placeholder="Number">
+        </label>
+         
+        </form>
+        <button class="closeme">Send</button>
+        </div>
+
+    </div>
+</div>
 ```
