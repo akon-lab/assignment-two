@@ -3,7 +3,7 @@
 1)There is header for every web-pages in smeraldo 
 ---
 with 'burger'button to navbar and Shop name in center of header
----
+***
 HTML code:
 ```html
 <header class="position-fixed header" >
@@ -35,7 +35,7 @@ HTML code
 3)There is introduction part to web page
 ---
 -General page: which show as big card("intro") with img background and little card("cardforintro") inside
----
+***
 HTML code
 ```html
   <div class="intro">
@@ -51,6 +51,8 @@ HTML code
 1.title:"About Us"
 2.image 
 3.text
+***
+HTML code:
 ```html
   <div class="aboutus container">
 
@@ -76,9 +78,9 @@ HTML code
 5)There is Special option in general web-page which have role as hook for users
 ---
 It works as simple Gallery from bootstrap, but there 1item=3cards;
----
+***
 each card(".mycard") look as juct images but in hoovering text of card will come up
----
+***
 HTML code
 ```html
       <div class="menu mb-5">
@@ -215,10 +217,10 @@ HTML code
 6)There little ver. of Smeraldo's sub-pages, as: Tropical plant(.ty1),Driyed flowers(.ty2) and Decoration(.ty3)
 ---
 Each of that option has cards(.t1flower), with image,name,text,price and feedback button(.like)
----
+***
 If user wiil look website from smartphone, it wil be to much scrolling so for that, i made radio-button, which on click open his button.
 I mean there are 3 options, each option have 1 radio-button, so there is 3 button with the name of option,which onlock cards to user
----
+***
 HTML code
 ```html
  <!--homeplant-->
@@ -363,11 +365,8 @@ HTML code
               &hearts; 
           </a>
         </div>
-          </div>
-
-        </div>
-       
-        
+          </div> 
+        </div>  
       </div>
 <!--decoration option with card and link-->
       <div id="t3" class="ty3">
