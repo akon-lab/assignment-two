@@ -1,4 +1,24 @@
 # Smeraldo
+Smeraldo consider 4 pages(1 general & 3 sub-tree)
+***
+<ul> General Page
+  <li>Header</li>
+  <li>Navbar</li>
+  <li>Intro</li>
+  <li>Some info</li>
+  <li>Bonus option</li>
+  <li>Lil ver of sub-pages</li>
+  <li>Footer</li>
+  <li>Dialog Form</li>
+</ul>
+<ul>Sub-page
+  <li>Header</li>
+  <li>Navbar</li>
+  <li>Intro</li>
+  <li>Some info</li> 
+  <li>Footer</li>
+  <li>Dialog Form</li>
+</ul>
 
 1)There is header for every web-pages in smeraldo 
 ---
@@ -14,6 +34,26 @@ HTML code:
           
   </div>
  </header> 
+```
+There is JS code, which change header color when it replace from top, I mean my header has fixed position so when user scroll down it just change color.
+***
+I made it cause it is WOW effect (LOL) and body bgcolor is white, and i think that in scrolling down will be hidden in body color
+```js
+<!--js to chanhe bg-color and color by replacement from the top of the site-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      
+$(function(){
+    $(window).on("scroll",function(){
+        if($(window).scrollTop()>50){
+            $(".header").addClass("change");
+        }
+        else{
+            $(".header").removeClass("change");
+        }
+    })
+});
+    </script>
 ```
 2)Navbar html code;
 ---
@@ -552,4 +592,28 @@ HTML code:
 
     </div>
 </div>
+```
+There is JS code for come up animation, if user click on mail button in footer
+```js
+<!--js dialog form -->
+<script>
+
+var modal = document.getElementById("dform");
+var btn = document.getElementById("email");
+var span = document.getElementsByClassName("closeme")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 ```
