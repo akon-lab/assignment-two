@@ -7,26 +7,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "Entering")
-public class Entering extends HttpServlet {
+@WebServlet(name = "Calc")
+public class Calc extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String email = request.getParameter("email");
-        String pass = request.getParameter("pass");
+        Double num1 = Double.parseDouble(request.getParameter("first"));
+        Double num2 = Double.parseDouble(request.getParameter("second"));
 
-        if (email.isEmpty() || pass.isEmpty()) {
-            request.setAttribute("message", "Please full form");
-        } else {
-            if (pass.equals("akon4") && email.equals("admin@bk.ru")) {
-                response.sendRedirect("/welcome.jsp");
-            } else {
-                response.sendRedirect("/kick.jsp");
-            }
+        if (num1 != null && num2 != null) {
+            Double ans = num1 + num2;
+            request.setAttribute("ans",ans);
+        }else {
+            request.setAttribute("error","Please full form");
         }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
-
 }
